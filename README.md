@@ -37,9 +37,10 @@ Run migrations and seeders to set up the database:
 npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
 Start the application:
+```
 
 ```bash
-    npm run start
+ npm run start
 ```
 API Endpoints
 1. Find Treasures
