@@ -11,14 +11,15 @@ Prerequisites
     MySQL database
 
 Project Setup
-
-    Clone the repository:
+ Clone the repository:
 
 ```bash
 git clone git@github.com:nickaldwin/Kitra.git
 ````
-cd kitra
-
+Go to Kitra folder
+```bash
+cd kitra/
+```
 Install dependencies:
 ```bash
 npm install
@@ -34,11 +35,11 @@ DB_NAME=kitra
 Run migrations and seeders to set up the database:
 
 ```bash
+npx sequelize-cli init
 npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
-Start the application:
 ```
-
+Start the application:
 ```bash
  npm run start
 ```
@@ -178,7 +179,7 @@ npm run start
 ```
 Additional Information
 
-    Nodemon: If you're using nodemon for development, you can start the server with:
+Nodemon: If you're using nodemon for development, you can start the server with:
 ```bash
 npm run dev
 ```
